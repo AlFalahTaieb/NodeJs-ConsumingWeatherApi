@@ -17,7 +17,7 @@ var geocodeAddress = (address,callback)=>{
     },(error,response,body)=>{
 
         if(error) {
-            callback('CThere is an Error check the Address please !')
+            callback('CThere is an Error check the Address please ! ')
 
         }
         else if (body.status==='ZERO_RESULTS'){

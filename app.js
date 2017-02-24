@@ -1,7 +1,7 @@
 
 var yargs = require('yargs');
-var geocode=require('./geocode/geocode')
-
+var geocode=require('./geocode/geocode');
+var weather=require('./weather/weather');
 
 //argv tékhou el input wo tparséha el yargs
 const argv = yargs
@@ -23,6 +23,21 @@ geocode.geocodeAddress(argv.address,(errorMessage,results)=>{
        console.log(errorMessage);
 
    } else{
-       console.log(JSON.stringify(results,undefined,2));
+    console.log(results.address)
+       weather.getWeather(results.latitude,results.longitude,(errorMessage,weatherResults) =>{
+
+           if(errorMessage){
+               console.log(errorMessage);
+           }else {
+               console.log(`La température actuelle est  ${weatherResults.temperature}. La température ressentie ${weatherResults.apparentTemperature}`);
+           }
+       });
    }
 }); // lehya bel loutani el kol
+
+//3def28f885984a61ebfd500eb8f8b459 forecost.io
+
+//lat,lng,callback
+
+
+
