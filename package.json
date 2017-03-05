@@ -9,6 +9,7 @@
   "author": "TaiebAlFalah",
   "license": "ISC",
   "dependencies": {
+    "axios": "^0.15.3",
     "yargs": "^6.6.0"
   }
 }

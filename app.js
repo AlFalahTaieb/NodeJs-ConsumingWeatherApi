@@ -34,7 +34,7 @@ geocode.geocodeAddress(argv.address,(errorMessage,results)=>{
        });
    }
 }); // lehya bel loutani el kol
-
+// béch tekhou el Data mel geocode wo thoutha fel getwather béch tkharjlna el résultat
 //3def28f885984a61ebfd500eb8f8b459 forecost.io
 
 //lat,lng,callback

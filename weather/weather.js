@@ -17,7 +17,7 @@ request({
             apparentTemperature: body.currently.apparentTemperature
         });
     }else {
-        callback('Unable to feth weather');
+        callback('Unable to fetch weather / Impossible de récupérer la météo');
     }
 });
 
