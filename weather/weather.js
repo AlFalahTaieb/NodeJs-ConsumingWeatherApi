@@ -5,7 +5,7 @@ var getWeather=(lat,lng,callback)=>{
 
 
 request({
-    url:  `https://api.darksky.net/forecast/3def28f885984a61ebfd500eb8f8b459/${lat},${lng}`,
+    url:  `https://api.darksky.net/forecast/SecretKey/${lat},${lng}`,
     json: true
 },(error, response, body )=> {
 //noinspection JSUnresolvedVariable
